@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Evgenii](https://up.htmlacademy.ru/htmlcss/37/user/1864249).
-- Наставник: `Виктория Никитина`.
+- Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273).
 
 ---
 
