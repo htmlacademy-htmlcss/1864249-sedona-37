@@ -27,7 +27,7 @@
         </ul>
         <ul class="user-menu">
           <li class="user-item">
-            <a href="" class="user-link"></a>
+            <a href="#" class="user-link"></a>
             <span class="visually-hidden">Поиск по сайту</span>
           </li>
           <li class="user-item">
@@ -36,7 +36,7 @@
             <span class="favorite-count">12</span>
           </li>
           <li class="user-item">
-            <a href="" class="user-link"> Хочу сюда! </a>
+            <a href="#" class="user-link"> Хочу сюда! </a>
           </li>
         </ul>
       </nav>
@@ -133,6 +133,40 @@
         <img class="academy-image" src="#" alt="Логотип HTML-Academy.">
       </section>
     </footer>
+
+    <div class="modal">
+      <div class="modal-window">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="date-field" class="modal-label">Время заезда:</label>
+          <input type="text" class="modal-date" name="date" id="date-field" value="27 апреля 2020">
+          <p class="error-message">Мы не можем отправить вас в прошлое</p>
+          <label for="date-field-id" class="modal-label">Дата выезда:</label>
+          <input type="text" class="model-date" name="date" id="date-field-id" value="27 апреля 2020">
+          <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+          <label class="model-label">Взрослые</label>
+          <button class="decrease" type="button">-
+            <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
+          </button>
+          <input type="text" name="adult-number" value="2">
+          <button class="increase" type="button">+
+            <span class="visually-hidden">Увеличить количество взрослых на 1</span>
+          </button>
+          <label class="modal-label">Дети</label>
+          <button class="decrease" type="button">-
+            <span class="visually-hidden">Уменьшить количество детей на 1</span>
+          </button>
+          <input type="text" name="children-number" value="2">
+          <button class="increase" type="button">+
+            <span class="visually-hidden">Увеличить количество детей на 1</span>
+          </button>
+          <button class="find" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
