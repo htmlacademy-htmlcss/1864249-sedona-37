@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <header class="page-header">
       <a href="#" class="logo-link">
@@ -45,14 +47,10 @@
         <nav class="button-nav">
           <ul class="nav-list">
             <li class="home-item">
-              <a class="home-button" href="#"
-                ><img src="#" alt="home-icon"
-              /></a>
+              <a class="home-button" href="#"><img src="#" alt="home-icon" /></a>
             </li>
             <li class="home-item">
-              <a class="home-button" href="#"
-                ><img src="#" alt="vector-icon"
-              /></a>
+              <a class="home-button" href="#"><img src="#" alt="vector-icon" /></a>
             </li>
             <li class="home-item">
               <a class="home-button" href="#">Гостиницы</a>
@@ -81,8 +79,25 @@
         </ul>
         <fieldset class="filter-items-group">
           <legend class="filter-items-title">Стоимость, ₽:</legend>
+          <input class="price-min-value" type="text" id="min-price" name="min-price">
+          <label class="price-label" for="min-price"></label>
+
+          <input class="price-max-value" type="text" id="max-price" name="max-price">
+          <label class="price-label" for="max-price"></label>
+          <div class="range-container">
+            <div class="range-scale">
+              <div class="range"></div>
+            </div>
+            <button class="range-handle-min" type="button">
+              <span class="visually-hidden">Установить минимальный порог цены</span>
+            </button>
+            <button class="range-handle-max" type="button">
+              <span class="visually-hidden">Установить максимальный порог цены</span>
+            </button>
+          </div>
         </fieldset>
       </section>
     </main>
   </body>
+
 </html>
