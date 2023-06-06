@@ -34,44 +34,44 @@
             <span class="favorite-count">12</span>
           </li>
           <li class="user-item">
-            <a href="" class="user-link"> Хочу сюда! </a>
+            <a href="#" class="user-link"> Хочу сюда! </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-catalog">
       <section class="sedona-hotels">
-        <h1>Гостиницы Седоны</h1>
+        <h1 class="page-header">Гостиницы Седоны</h1>
         <nav class="button-nav">
-          <ul class="but-nav">
-            <li class="home-button">
+          <ul class="nav-list">
+            <li class="home-item">
               <a class="home-button" href="#"
                 ><img src="#" alt="home-icon"
               /></a>
             </li>
-            <li class="vector-nav">
-              <a class="vector-link" href="#"
+            <li class="home-item">
+              <a class="home-button" href="#"
                 ><img src="#" alt="vector-icon"
               /></a>
             </li>
-            <li class="hotel-button">
-              <a class="hotel-link" href="#">Гостиницы</a>
+            <li class="home-item">
+              <a class="home-button" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </section>
       <section class="infrastructure">
-        <ul class="options">
-          <li class="infrastructure-chapter">
-            <p class="inf-paragraph">
+        <ul class="infrastructure-list">
+          <li class="infrastructure-item">
+            <p class="app-text">
               <label for="swim">Инфраструктура:</label>
               <input type="checkbox" id="swim" name="swim" checked />Бассейн
               <input type="checkbox" id="swim" name="swim" checked />Парковка
               <input type="checkbox" id="swim" name="swim" />Wi-Fi
             </p>
           </li>
-          <li class="app-type">
-            <p class="app-paragraph">
+          <li class="infrastructure-item">
+            <p class="app-text">
               <label for="homes">Тип жилья:</label>
               <input type="radio" id="homes" name="homes" checked />Гостиница
               <input type="radio" id="homes" name="homes" />Мотель
@@ -79,6 +79,9 @@
             </p>
           </li>
         </ul>
+        <fieldset class="filter-items-group">
+          <legend class="filter-items-title">Стоимость, ₽:</legend>
+        </fieldset>
       </section>
     </main>
   </body>
