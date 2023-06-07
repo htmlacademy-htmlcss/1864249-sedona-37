@@ -100,22 +100,21 @@
         <button class="button" type="reset">Сбросить</button>
       </section>
       <section class="search-results">
-      <select class="search-control" area-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
-      <a class="button" href="#">
-        <span class="visually-hidden">Таблица</span>
-      </a>
-      <a class="button" href="#">
-        <span class="visually-hidden">Список</span>
-      </a>
-      </section>
-      <ul class="hotel-list">
-        <li class="hotel-item">
-          <a href="#" class="hotel-link">
-            <img class="hotel-img" src="#" alt="">
-            <h3 class="hotel-header">Amara Resort & Spa</h3>
+        <select class="search-control" area-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a class="button" href="#">
+          <span class="visually-hidden">Таблица</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Список</span>
+        </a>
+        <ul class="hotel-list">
+          <li class="hotel-item">
+            <a href="#" class="hotel-link">
+              <img class="hotel-img" src="#" alt="">
+              <h3 class="hotel-header">Amara Resort & Spa</h3>
             </a>
             <p class="hotel-text">Гостиница</p>
             <p class="hotel-text">От 4000 ₽</p>
@@ -125,21 +124,99 @@
               <span class="visually-hidden">Звездность отеля - четыре звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 8,5</p>
-        </li>
-        <li class="hotel-item">
-          <a class="hotel-link" href="#">
-            <img class="hotel-img" src="#" alt="">
-            <h3 class="hotel-subject">Villas at Poco Diablo</h3>
-          </a>
-          <p class="hotel-text">Гостиница</p>
-          <p class="hotel-price">От 5000 ₽</p>
-          <a class="hotel-btn" href="#">подробнее</a>
-          <button class="button" type="submit">в избранном</button>
-          <span class="visually-hidden">Четыре звезды</span>
-          <p class="hotel-rating">Рейтинг: 9,2</p>
-        </li>
-      </ul>
+          </li>
+          <li class="hotel-item">
+            <a class="hotel-link" href="#">
+              <img class="hotel-img" src="#" alt="">
+              <h3 class="hotel-subject">Villas at Poco Diablo</h3>
+            </a>
+            <p class="hotel-text">Гостиница</p>
+            <p class="hotel-price">От 5000 ₽</p>
+            <a class="hotel-btn" href="#">подробнее</a>
+            <button class="button" type="submit">в избранном</button>
+            <span class="visually-hidden">Четыре звезды</span>
+            <p class="hotel-rating">Рейтинг: 9,2</p>
+          </li>
+          <li class="hotel-item">
+            <a class="hotel-link" href="#">
+              <img class="hotel-img" src="#" alt="">
+              <h3 class="hotel-subject">Desert Quail Inn</h3>
+            </a>
+            <p class="hotel-text">Гостиница</p>
+            <p class="hotel-price">От 2500 ₽</p>
+            <a class="hotel-btn" href="#">подробнее</a>
+            <button class="button" type="submit">в избранное</button>
+            <span class="visually-hidden">Три звезды</span>
+            <p class="hotel-rating">Рейтинг: 6,9</p>
+          </li>
+          <li class="hotel-item">
+            <a class="hotel-link" href="#">
+              <img class="hotel-img" src="#" alt="">
+              <h3 class="hotel-subject">GreenTree Inn</h3>
+            </a>
+            <p class="hotel-text">Гостиница</p>
+            <p class="hotel-price">От 1500 ₽</p>
+            <a class="hotel-btn" href="#">подробнее</a>
+            <button class="button" type="submit">в избранное</button>
+            <span class="visually-hidden">Две звезды</span>
+            <p class="hotel-rating">Рейтинг: 5,0</p>
+          </li>
+        </ul>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer class="footer-page">
+      <section class="subscription">
+        <h2 class="subscription-header">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+          <button class="button subscription-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="footer-contact">
+        <ul class="link-list">
+          <li class="link-item">
+            <a class="link-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Наша страница VK</span>
+            </a>
+          </li>
+          <li class="chapter-tg">
+            <a class="link-tg" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Наш телеграмм</span>
+            </a>
+          </li>
+          <li class="chapter-ut">
+            <a class="link-ut" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Наш канал YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="academy-link" href="https://htmlacademy.ru/">
+          <img class="academy-image" src="#" alt="Логотип HTML-Academy.">
+        </a>
+      </section>
+    </footer>
   </body>
 
 </html>
