@@ -79,11 +79,11 @@
         </ul>
         <fieldset class="filter-items-group">
           <legend class="filter-items-title">Стоимость, ₽:</legend>
-          <input class="price-min-value" type="text" id="min-price" name="min-price">
+          <input class="price-min-value" type="text" id="min-price" name="min-price" placeholder="0" value="0">
           <label class="price-label" for="min-price"></label>
 
-          <input class="price-max-value" type="text" id="max-price" name="max-price">
-          <label class="price-label" for="max-price"></label>
+          <input class="price-max-value" type="text" id="max-price" name="max-price" placeholder="9000" value="9000">
+          <label class="price-label" for="max-price">до</label>
           <div class="range-container">
             <div class="range-scale">
               <div class="range"></div>
@@ -96,7 +96,49 @@
             </button>
           </div>
         </fieldset>
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="reset">Сбросить</button>
       </section>
+      <section class="search-results">
+      <select class="search-control" area-label="Сортировка">
+        <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала дорогие</option>
+      </select>
+      <a class="button" href="#">
+        <span class="visually-hidden">Таблица</span>
+      </a>
+      <a class="button" href="#">
+        <span class="visually-hidden">Список</span>
+      </a>
+      </section>
+      <ul class="hotel-list">
+        <li class="hotel-item">
+          <a href="#" class="hotel-link">
+            <img class="hotel-img" src="#" alt="">
+            <h3 class="hotel-header">Amara Resort & Spa</h3>
+            </a>
+            <p class="hotel-text">Гостиница</p>
+            <p class="hotel-text">От 4000 ₽</p>
+            <a class="hotel-btn" href="#">подробнее</a>
+            <button class="button" type="submit">в избранное</button>
+            <p class="stars stars-four">
+              <span class="visually-hidden">Звездность отеля - четыре звезды</span>
+            </p>
+            <p class="hotel-rating">Рейтинг: 8,5</p>
+        </li>
+        <li class="hotel-item">
+          <a class="hotel-link" href="#">
+            <img class="hotel-img" src="#" alt="">
+            <h3 class="hotel-subject">Villas at Poco Diablo</h3>
+          </a>
+          <p class="hotel-text">Гостиница</p>
+          <p class="hotel-price">От 5000 ₽</p>
+          <a class="hotel-btn" href="#">подробнее</a>
+          <button class="button" type="submit">в избранном</button>
+          <span class="visually-hidden">Четыре звезды</span>
+          <p class="hotel-rating">Рейтинг: 9,2</p>
+        </li>
+      </ul>
     </main>
   </body>
 
