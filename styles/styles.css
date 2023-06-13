@@ -123,6 +123,13 @@ body {
 .advantages {
 }
 
+.advantages-content {
+  width: 400px;
+  background: #82b3d3;
+  color: #ffffff;
+  padding: 102px 85px 0;
+}
+
 .advantages-item {
 }
 
@@ -137,9 +144,18 @@ body {
   padding-bottom: 33px;
   margin-bottom: 29px;
   position: relative;
+  color: #ffffff;
 }
 
 .advantages-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  width: 230px;
+  height: 63px;
 }
 
 .advantages-image {
@@ -148,7 +164,21 @@ body {
 .service-sec {
 }
 
-.service-text {
+.service-header {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .service-list {
@@ -158,27 +188,78 @@ body {
 }
 
 .service-title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
 }
 
 .hotel-sec {
 }
 
+.hotel-head {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .hotel-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .hotel-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer-page {
+  color: #ffffff;
 }
 
 .subscription {
 }
 
 .subscription-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .subscription-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .subscription-form {
@@ -188,6 +269,13 @@ body {
 }
 
 .subscription-button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer-contact {
@@ -209,6 +297,12 @@ body {
 }
 
 .contact-number {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .academy-link {
