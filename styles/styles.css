@@ -1,10 +1,177 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format(woff2)
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format(woff2)
+  font-weight: 700;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT-Sans-400";
-}
-@font-face {
-  font-family: "PT Sans-400";
-  src: url(/fonts/ptsans-400.woff2) format(woff2)
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
+  color: #333333;
+  background: #F2F2F2;
+
 }
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.page-header {}
+
+.logo-link {}
+
+.logo-image {}
+
+.navigation {}
+
+.menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-item {}
+
+.menu-link {
+ font-weight: 700;
+ font-family: PT Sans;
+ font-style: Bold;
+ font-size: 20px;
+ line-height: 24px;
+ color: #000000;
+ text-decoration: none;
+}
+
+.user-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.user-item {}
+
+.user-link {}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.favorite-count {}
+
+.main {}
+
+.welcome {}
+
+.welcome-text {}
+
+.advantages-section {}
+
+.advantages-header {}
+
+.advantages-description {}
+
+.advantages {}
+
+.advantages-item {}
+
+.advantages-title {}
+
+.advantages-text {}
+
+.advantages-image {}
+
+.service-sec {}
+
+.service-text {}
+
+.service-list {}
+
+.service-item {}
+
+.service-title {}
+
+.hotel-sec {}
+
+.hotel-text {}
+
+.hotel-link {}
+
+.footer-page {}
+
+.subscription {}
+
+.subscription-header {}
+
+.subscription-text {}
+
+.subscription-form {}
+
+.field {}
+
+.subscription-button {}
+
+.footer-contact {}
+
+.link-list {}
+
+.link-item {}
+
+.link-vk {}
+
+.link-tg {}
+
+.link-youtube {}
+
+.contact-number {}
+
+.academy-link {}
+
+.modal {}
+
+.modal-window {}
+
+.modal-title {}
+
+.modal-close {}
+
+.modal-form {}
+
+.modal-label {}
+
+.modal-date {}
+
+.error-message {}
+
+.message {}
+
+.decrease-but {}
+
+.value-inp {}
+
+.increase-but {}
+
+.find-but {}
