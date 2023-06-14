@@ -353,9 +353,15 @@ body {
 }
 
 .sedona-hotels {
+  color: #ffffff;
 }
 
 .page-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  position: absolute;
 }
 
 .button-nav {
@@ -368,6 +374,11 @@ body {
 }
 
 .home-button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
 }
 
 .infrastructure-group {
@@ -377,6 +388,10 @@ body {
 }
 
 .infrastructure-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
 }
 
 .infrastructure-list {
@@ -389,6 +404,9 @@ body {
 }
 
 .checkbox-label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .park-box {
@@ -400,9 +418,6 @@ body {
 .filter-house {
 }
 
-.catalog-title {
-}
-
 .house-list {
 }
 
@@ -410,9 +425,6 @@ body {
 }
 
 .house-box {
-}
-
-.checkbox-lbl {
 }
 
 .motel-box {
@@ -428,12 +440,24 @@ body {
 }
 
 .price-min-value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
 }
 
 .price-label {
 }
 
 .price-max-value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
 }
 
 .range-container {
@@ -452,18 +476,35 @@ body {
 }
 
 .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .search-results {
 }
 
 .select-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .search-control {
 }
 
-.cheap {
+.hotel-choice {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .popular {
@@ -491,30 +532,88 @@ body {
 }
 
 .hotel-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
 }
 
 .card-price {
 }
 
 .price-hotel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  width: 140px;
+  height: 21px;
 }
 
 .price-value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  width: 140px;
+  height: 21px;
 }
 
 .cards-sellect {
 }
 
 .about {
+  width: 88px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn-elected {
+  width: 104px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .btn-favorite {
+  width: 100px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .stars-four {
 }
 
 .hotel-rating {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }
 
 .pagination {
@@ -524,7 +623,40 @@ body {
 }
 
 .pagination-link-first {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscription-head {
+  width: 404px;
+  height: 36.35px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.subscription-para {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
