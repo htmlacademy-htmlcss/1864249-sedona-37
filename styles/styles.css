@@ -93,6 +93,13 @@ body {
 }
 
 .welcome {
+  background-image: url("/images/jpeg/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, center top;
+  background-size: 100% 57px, cover;
+  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 77px;
 }
 
 .welcome-text {
