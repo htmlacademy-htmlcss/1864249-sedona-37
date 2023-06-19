@@ -100,11 +100,16 @@ body {
 }
 
 .user-link-want {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #756157;
   color: #ffffff;
   text-decoration-line: none;
   border-radius: 4px;
-  padding: 8px 34px;
+  padding: 8px 50px;
 }
 
 .visually-hidden {
@@ -263,6 +268,27 @@ body {
 .service-item {
   padding: 80px 85px 81px;
 }
+.service-item:nth-child(odd) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.baan-svg {
+  width: 75px;
+  height: 72px;
+  margin-left: 63.5px;
+}
+
+.food-svg {
+  margin-left: 78.5px;
+  width: 74px;
+  height: 70px;
+}
+
+.souvenirs-svg {
+  margin-left: 82.5px;
+  width: 64px;
+  height: 76px;
+}
 
 .service-title {
   font-size: 24px;
@@ -273,6 +299,9 @@ body {
 }
 
 .service-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
