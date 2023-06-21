@@ -5,57 +5,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Гостиницы</title>
   </head>
 
   <body>
-    <header class="page-header">
-      <a href="#" class="logo-link">
-        <img
-          class="logo-image"
-          src="./images/svg/logo.svg"
-          alt="Логотип сайта"
-          width="140"
-          height="70"
-        />
-      </a>
-      <nav class="navigation">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a href="#" class="menu-link">Главная</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">О Седоне</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="user-menu">
-          <li class="user-item">
-            <a href="" class="user-link"></a>
-            <span class="visually-hidden">Поиск по сайту</span>
-          </li>
-          <li class="user-item">
-            <a href="" class="user-link"></a>
-            <span class="visually-hidden">Добавить в избранное</span>
-            <span class="favorite-count">12</span>
-          </li>
-          <li class="user-item">
-            <a href="#" class="user-link"> Хочу сюда! </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page-container">
+      <header class="page-header">
+        <a href="#" class="logo-link">
+          <img
+            class="logo-image"
+            src="./images/svg/logo.svg"
+            alt="Логотип сайта Седона"
+            width="140"
+            height="70"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Главная</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">О Седоне</a>
+            </li>
+            <li class="menu-item">
+              <a href="catalog.html" class="menu-link">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="user-menu">
+            <li class="user-item">
+              <a href="#" class="user-link">
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <span class="visually-hidden">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="user-item">
+              <a href="" class="user-link">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg
+                  class=""
+                  width="18"
+                  height="17"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
+                    fill="black"
+                  />
+                </svg>
+                <span class="favorite-count">12</span>
+              </a>
+            </li>
+            <li class="user-item">
+              <a href="#" class="user-link-want">ХОЧУ СЮДА!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main class="main-catalog">
       <section class="sedona-hotels">
-        <h1 class="page-header">Гостиницы Седоны</h1>
+        <h1 class="catalog-page-header">Гостиницы Седоны</h1>
         <nav class="button-nav">
           <ul class="nav-list">
             <li class="home-item">
-              <a class="home-button" href="#"
-                ><img src="#" alt="home-icon"
-              /></a>
+              <a class="home-button" href="#">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+                <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
+                </svg>
+
             </li>
             <li class="home-item">
               <a class="home-button" href="#"
@@ -86,25 +119,25 @@
           </ul>
       </fieldset>
       <fieldset class="filter-house">
-        <legend class="catalog-title">Тип жилья:</legend>
+        <legend class="infrastructure-title">Тип жилья:</legend>
         <ul class="house-list">
           <li class="house-items">
             <input class="house-box" type="radio" id="house-hotel" name="hotel" checked>
-            <label class="checkbox-lbl" for="house-hotel">Гостиница</label>
+            <label class="checkbox-label" for="house-hotel">Гостиница</label>
           </li>
           <li class="house-items">
             <input class="motel-box" type="radio" id="motel-hotel" name="motel">
-            <label class="checkbox-lbl" for="motel-hotel">Мотель</label>
+            <label class="checkbox-label" for="motel-hotel">Мотель</label>
           </li>
           <li class="house-items">
             <input class="appart-box" type="radio" id="appart-hotel" name="Appart">
-            <label class="checkbox-lbl" for="appart-hotel">Апартаменты</label>
+            <label class="checkbox-label" for="appart-hotel">Апартаменты</label>
           </li>
         </ul>
       </fieldset>
 
         <fieldset class="filter-items-group">
-          <legend class="items-title">Стоимость, ₽:</legend>
+          <legend class="infrastructure-title">Стоимость, ₽:</legend>
           <input class="price-min-value" type="text" id="min-price" name="min-price" value="0" />
           <label class="price-label" for="min-price"></label>
           <input class="price-max-value" type="text" id="max-price" name="max-price" value="9000" />
@@ -131,17 +164,17 @@
         <h2 class="visually-hidden">Галерея отелей</h2>
         <h3 class="select-title">Найдено гостиниц: 38</h3>
         <select class="search-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="popular">Сначала популярное</option>
-          <option value="expensive">Сначала дорогие</option>
+          <option value="hotel-choice">Сначала дешевые</option>
+          <option value="hotel-choice">Сначала популярное</option>
+          <option value="hotel-choice">Сначала дорогие</option>
         </select>
-        <a class="button" href="#">
+        <a class="button-link" href="#">
           <span class="visually-hidden">Таблица</span>
         </a>
-        <a class="gallery-view" href="#">
+        <a class="button-link" href="#">
           <span class="visually-hidden">Показать во весь экран</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-link" href="#">
           <span class="visually-hidden">Список</span>
         </a>
       </form>
@@ -161,7 +194,7 @@
               <a class="about" href="#">Подробнее</a>
               <button class="btn-favorite">В избранное</button>
             </div>
-            <div class="stars stars-four">
+            <div class="stars-four">
               <span class="visually-hidden"
                 >Звездность отеля - четыре звезды</span
               >
@@ -179,9 +212,9 @@
             </div>
             <div class="cards-sellect">
               <a class="about" href="#">Подробнее</a>
-              <button class="btn-favorite">В избранное</button>
+              <button class="btn-elected">В избранном</button>
             </div>
-            <div class="stars stars-four">
+            <div class="stars-four">
               <span class="visually-hidden"
                 >Звездность отеля - четыре звезды</span
               >
@@ -201,7 +234,7 @@
               <a class="about" href="#">Подробнее</a>
               <button class="btn-favorite">В избранное</button>
             </div>
-            <div class="stars stars-four">
+            <div class="stars-four">
               <span class="visually-hidden"
                 >Звездность отеля - три звезды</span
               >
@@ -221,7 +254,7 @@
               <a class="about" href="#">Подробнее</a>
               <button class="btn-favorite">В избранное</button>
             </div>
-            <div class="stars stars-four">
+            <div class="stars-four">
               <span class="visually-hidden"
                 >Звездность отеля - две звезды</span
               >
@@ -231,7 +264,7 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link-first">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -253,8 +286,8 @@
     </main>
     <footer class="footer-page">
       <section class="subscription">
-        <h2 class="subscription-header">Подпишитесь на рассылку</h2>
-        <p class="subscription-text">
+        <h2 class="subscription-head">Подпишитесь на рассылку</h2>
+        <p class="subscription-para">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form
@@ -269,13 +302,12 @@
             name="newsletter-email"
             required
           />
-          <button class="button subscription-button" type="submit">
+          <button class="subscription-button" type="submit">
             Подписаться
           </button>
         </form>
       </section>
       <section class="footer-contact">
-        <h2 class="visually-hidden">Контакты города Седона</h2>
         <ul class="link-list">
           <li class="link-item">
             <a class="link-vk" href="#">
@@ -296,7 +328,7 @@
               </svg>
             </a>
           </li>
-          <li class="chapter-tg">
+          <li class="link-item">
             <a class="link-tg" href="#">
               <span class="visually-hidden">Наш телеграмм</span>
               <svg
@@ -313,8 +345,8 @@
               </svg>
             </a>
           </li>
-          <li class="chapter-ut">
-            <a class="link-ut" href="#">
+          <li class="link-item">
+            <a class="link-youtube" href="#">
               <span class="visually-hidden">Наш канал YouTube</span>
               <svg
                 width="22"
@@ -331,12 +363,15 @@
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="contact-number" href="tel:+78128121212"
+          >+7 (812) 812-12-12</a
+        >
         <a class="academy-link" href="#">
           <span class="visually-hidden">Логотип HTML-Academy</span>
           <svg
             width="115"
             height="34"
+            о
             viewBox="0 0 115 34"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
