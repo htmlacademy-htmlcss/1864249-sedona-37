@@ -483,12 +483,13 @@ body {
   top: 0;
   left: 0;
   background: rgba(242, 242, 242, 0.8);
+  align-items: center;
+  justify-content: center;
 }
 
 .modal--show {
   display: flex;
-  justify-content: center;
-  align-items: center;}
+}
 
 .modal-window {
   padding: 64px 70px;
@@ -509,21 +510,11 @@ body {
   border: none;
   background-color: red;
   border-radius: 50%;
-  cursor: pointer;}
-
-.modal-title {
+  cursor: pointer;
 }
 
-.modal-close {
-  position: absolute;
-  right: 70px;
-  top: 70px;
-  width: 52px;
-  height: 52px;
-  border: none;
-  background-color: red;
-  border-radius: 50%;
-  cursor: pointer;
+
+.modal-title {
 }
 
 .modal-form {
