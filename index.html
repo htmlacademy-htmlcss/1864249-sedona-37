@@ -443,23 +443,27 @@
 
       <div class="modal">
         <div class="modal-window">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-close" type="button">
-            <span class="visually-hidden">Закрыть модальное окно</span>
-          </button>
+          <div class="modal-title-header">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <button class="modal-close" type="button">
+              <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+          </div>
           <form
             class="modal-form"
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label class="modal-label" for="date-field">Время заезда:</label>
-            <input
-              type="text"
-              class="modal-date"
-              name="date"
-              id="date-field"
-              value="27 апреля 2020"
-            />
+            <div class="wrapper-form">
+              <label class="modal-label" for="date-field">Время заезда:</label>
+              <input
+                class="modal-date"
+                type="text"
+                name="date"
+                id="date-field"
+                value="27 апреля 2020"
+              />
+            </div>
             <p class="error-message">Мы не можем отправить вас в прошлое</p>
             <label for="date-field-id" class="modal-label">Дата выезда:</label>
             <input
