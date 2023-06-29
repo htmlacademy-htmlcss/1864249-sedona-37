@@ -457,7 +457,7 @@
             <div class="wrapper-form">
               <label class="modal-label" for="date-field">Время заезда:</label>
               <input
-                class="modal-date"
+                class="modal-date modal-date-inp"
                 type="text"
                 name="date"
                 id="date-field"
@@ -465,53 +465,63 @@
               />
             </div>
             <p class="error-message">Мы не можем отправить вас в прошлое</p>
-            <label for="date-field-id" class="modal-label">Дата выезда:</label>
-            <input
-              type="text"
-              class="model-date"
-              name="date"
-              id="date-field-id"
-              value="27 апреля 2020"
-            />
+            <div class="wrapper-form">
+              <label for="modal-label" class="modal-label">Дата выезда:</label>
+              <input
+                type="text"
+                class="modal-date modal-date-inp"
+                name="date"
+                id="date-field-end"
+                value="1 сентября 2023"
+              />
+            </div>
             <p class="message">На эти даты есть свободные номера. Пока есть.</p>
-
-            <label class="model-label">Взрослые</label>
-            <button class="decrease-but" type="button">
-              -
-              <span class="visually-hidden"
-                >Уменьшить количество взрослых на 1</span
-              >
-            </button>
-            <input
-              class="value-inp"
-              type="text"
-              name="adult-number"
-              value="2"
-            />
-            <button class="increase-but" type="button">
-              +
-              <span class="visually-hidden"
-                >Увеличить количество взрослых на 1</span
-              >
-            </button>
+            <div class="wrapper-form wrapper-form-count">
+            <div class="adult-number">
+              <label class="modal-label" for="adult-number">Взрослые</label>
+              <div class="button-wrapper">
+              <button class="meaning meaning-minus" type="button">
+                -
+                <span class="visually-hidden"
+                  >Уменьшить количество взрослых на 1</span
+                >
+              </button>
+              <input
+                class="value-inp"
+                type="text"
+                name="adult-number"
+                id="adult-number"
+                value="2"
+              />
+              <button class="meaning meaning-plus" type="button">
+                +
+                <span class="visually-hidden"
+                  >Увеличить количество взрослых на 1</span
+                >
+              </button>
+            </div>
+            </div>
+            <div class="kids-number">
             <label class="modal-label">Дети</label>
-            <button class="decrease-but" type="button">
+            <button class="meaning meaning-minus" type="button">
               -
               <span class="visually-hidden"
                 >Уменьшить количество детей на 1</span
               >
             </button>
-            <input type="value-inp" name="children-number" value="2" />
-            <button class="increase" type="button">
+            <input class="value-inp" type="text" name="children-number" id="children-number" value="2" />
+            <button class="meaning meaning-plus" type="button">
               +
               <span class="visually-hidden"
                 >Увеличить количество детей на 1</span
               >
             </button>
+            </div>
             <button class="find-but" type="submit">Найти</button>
           </form>
         </div>
       </div>
+    </div>
     </div>
     <script src="./script/script.js"></script>
   </body>
