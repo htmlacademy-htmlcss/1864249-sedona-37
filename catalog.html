@@ -160,29 +160,32 @@
 
       </form>
       </section>
-      <section class="search-results">
+      <section class="search">
         <h2 class="visually-hidden">Галерея отелей</h2>
+        <section class="search-results">
         <h3 class="select-title">Найдено гостиниц: 38</h3>
         <select class="search-control" aria-label="Сортировка">
           <option value="hotel-choice">Сначала дешевые</option>
           <option value="hotel-choice">Сначала популярное</option>
           <option value="hotel-choice">Сначала дорогие</option>
         </select>
-        <a class="button-link" href="#">
+        <div class="type-view">
+        <a class="button-link button-link-light" href="#">
           <span class="visually-hidden">Таблица</span>
         </a>
-        <a class="button-link" href="#">
+        <a class="button-link button-link-full" href="#">
           <span class="visually-hidden">Показать во весь экран</span>
         </a>
-        <a class="button-link" href="#">
+        <a class="button-link button-link-column" href="#">
           <span class="visually-hidden">Список</span>
         </a>
+      </div>
       </form>
       </section>
       <section class="hetel-search"></section>
         <ul class="hotel-list">
           <li class="hotel-item">
-            <a href="#" class="hotel-link">
+            <a href="#" class="hotel-card-link">
               <img class="hotel-img" src="./images/jpeg-hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa hotel" />
               <h3 class="hotel-header">Amara Resort & Spa</h3>
             </a>
@@ -202,7 +205,7 @@
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
           <li class="hotel-item">
-            <a href="#" class="hotel-link">
+            <a href="#" class="hotel-card-link">
               <img class="hotel-img" src="./images/jpeg-hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo hotel" />
               <h3 class="hotel-header">Villas at Poco Diablo</h3>
             </a>
@@ -222,7 +225,7 @@
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
           <li class="hotel-item">
-            <a href="#" class="hotel-link">
+            <a href="#" class="hotel-card-link">
               <img class="hotel-img" src="./images/jpeg-hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn hotel" />
               <h3 class="hotel-header">Desert Quail Inn</h3>
             </a>
@@ -242,7 +245,7 @@
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
           <li class="hotel-item">
-            <a href="#" class="hotel-link">
+            <a href="#" class="hotel-card-link">
               <img class="hotel-img" src="./images/jpeg-hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn hotel" />
               <h3 class="hotel-header">GreenTree</h3>
             </a>
@@ -283,6 +286,7 @@
           </li>
         </ul>
       </section>
+
     </main>
     <footer class="footer-page">
       <section class="subscription">
