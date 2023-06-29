@@ -919,13 +919,13 @@ body {
 }
 
 .hotel-list {
-  list-style: none;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 16px;
+  margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 1060px;
-  margin: 0 auto;
+  list-style: none;
+  margin-bottom: 20px;
 }
 
 .hotel-item {
@@ -1031,39 +1031,49 @@ body {
 }
 
 .pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .pagination-item {
 }
 
-.pagination-link-first {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .pagination-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  display: flex;
+  height: 60px;
+  min-width: 60px;
+  background-color: #82b3d3;
+  box-sizing: border-box;
+  padding: 11.364px 0 12.636px 0;
+  border-radius: 4px;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
+.subscription-catalog {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+}
+.subscribe-wrapper {
+  max-width: 475px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
 .subscription-head {
   width: 404px;
   height: 36.35px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-transform: uppercase;
+
   color: #000000;
 }
 
