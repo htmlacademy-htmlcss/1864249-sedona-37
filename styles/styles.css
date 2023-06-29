@@ -932,7 +932,7 @@ body {
   width: 340px;
   padding: 20px;
   display: grid;
-  border: 1px solid red;
+  border: 1px solid #e6e6e6;
   box-sizing: border-box;
 }
 
