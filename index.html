@@ -16,7 +16,7 @@
             class="logo-image"
             src="./images/svg/logo.svg"
             alt="Логотип сайта Седона"
-            width="140"
+            width="14200"
             height="70"
           />
         </a>
@@ -157,7 +157,7 @@
             </li>
           </ul>
         </section>
-        <section class="service-sec">
+        <section class="service">
           <h2 class="service-header">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </h2>
@@ -386,7 +386,6 @@
             <svg
               width="115"
               height="34"
-              о
               viewBox="0 0 115 34"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -456,17 +455,23 @@
           >
             <div class="wrapper-form">
               <label class="modal-label" for="date-field">Время заезда:</label>
-              <input
-                class="modal-date modal-date-inp"
-                type="text"
-                name="date"
-                id="date-field"
-                value="27 апреля 2020"
-              />
+              <div class="wrapper-check-in">
+                <input
+                  class="modal-date modal-date-inp"
+                  type="text"
+                  name="date"
+                  id="date-field"
+                  value="27 апреля 2020"
+                />
+
+                <p class="error-message">Мы не можем отправить вас в прошлое</p>
+              </div>
             </div>
-            <p class="error-message">Мы не можем отправить вас в прошлое</p>
+
             <div class="wrapper-form">
-              <label for="modal-label" class="modal-label">Дата выезда:</label>
+              <label for="date-field-end" class="modal-label"
+                >Дата выезда:</label
+              >
               <input
                 type="text"
                 class="modal-date modal-date-inp"
@@ -477,52 +482,61 @@
             </div>
             <p class="message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="wrapper-form wrapper-form-count">
-            <div class="adult-number">
-              <label class="modal-label" for="adult-number">Взрослые</label>
-              <div class="button-wrapper">
-              <button class="meaning meaning-minus" type="button">
-                -
-                <span class="visually-hidden"
-                  >Уменьшить количество взрослых на 1</span
-                >
-              </button>
-              <input
-                class="value-inp"
-                type="text"
-                name="adult-number"
-                id="adult-number"
-                value="2"
-              />
-              <button class="meaning meaning-plus" type="button">
-                +
-                <span class="visually-hidden"
-                  >Увеличить количество взрослых на 1</span
-                >
-              </button>
-            </div>
-            </div>
-            <div class="kids-number">
-            <label class="modal-label">Дети</label>
-            <button class="meaning meaning-minus" type="button">
-              -
-              <span class="visually-hidden"
-                >Уменьшить количество детей на 1</span
-              >
-            </button>
-            <input class="value-inp" type="text" name="children-number" id="children-number" value="2" />
-            <button class="meaning meaning-plus" type="button">
-              +
-              <span class="visually-hidden"
-                >Увеличить количество детей на 1</span
-              >
-            </button>
+              <div class="adult-number">
+                <label class="modal-label" for="adult-number">Взрослые:</label>
+                <div class="button-wrapper">
+                  <button class="meaning meaning-minus" type="button">
+                    -
+                    <span class="visually-hidden"
+                      >Уменьшить количество взрослых на 1</span
+                    >
+                  </button>
+                  <input
+                    class="value-inp"
+                    type="text"
+                    name="adult-number"
+                    id="adult-number"
+                    value="2"
+                  />
+                  <button class="meaning meaning-plus" type="button">
+                    +
+                    <span class="visually-hidden"
+                      >Увеличить количество взрослых на 1</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="kids-number">
+                <label class="modal-label">Дети:</label>
+                <div class="button-wrapper">
+                  <button class="meaning meaning-minus" type="button">
+                    -
+                    <span class="visually-hidden"
+                      >Уменьшить количество детей на 1</span
+                    >
+                  </button>
+                  <input
+                    class="value-inp"
+                    type="text"
+                    name="children-number"
+                    id="children-number"
+                    value="2"
+                  />
+                  <button class="meaning meaning-plus" type="button">
+                    +
+                    <span class="visually-hidden"
+                      >Увеличить количество детей на 1</span
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
             <button class="find-but" type="submit">Найти</button>
           </form>
         </div>
       </div>
     </div>
-    </div>
+
     <script src="./script/script.js"></script>
   </body>
 </html>
