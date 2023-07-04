@@ -583,8 +583,12 @@ body {
 .error-message {
   font-family: PT Sans;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 24px;
   color: #ff5757;
+  margin: 0;
+  padding-bottom: 24px;
+  padding-left: 21px;
+  margin-top: 4px;
 }
 
 .message {
@@ -592,9 +596,9 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  margin-top: 3px;
+  margin-top: 4px;
   margin-left: 158px;
-  margin-bottom: 33px;
+  margin-bottom: 24px;
 }
 
 .adult-number {
@@ -630,7 +634,7 @@ body {
   height: 48px;
   background-position-y: center;
   background-position-x: center;
-  background: gray;
+  background: #f2f2f2;
   cursor: pointer;
 }
 
@@ -642,7 +646,7 @@ body {
   height: 48px;
   background-position-y: center;
   background-position-x: center;
-  background: gray;
+  background: #f2f2f2;
   cursor: pointer;
 }
 
@@ -984,19 +988,23 @@ body {
 }
 
 .cards-sellect {
+  display: flex;
+  justify-content: space-between;
 }
 
-.about {
-  width: 88px;
-  height: 20px;
-  font-style: normal;
+.about-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
+  text-decoration-line: none;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 8px;
+  width: 140px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  box-sizing: border-box;
 }
 
 .btn-elected {
@@ -1017,17 +1025,29 @@ body {
   border-radius: 4px;
 }
 
+.stars {
+}
+
 .stars-four {
+  background-image: url(../images/svg/stars-four.svg);
 }
 
 .hotel-rating {
+  font-size: 16px;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   color: #333333;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+
+  width: 140px;
+  height: 37px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 22px;
 }
 
 .pagination {
