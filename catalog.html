@@ -82,23 +82,8 @@
           <nav class="button-nav">
             <ul class="nav-list">
               <li class="home-item">
-                <a class="home-button" href="#">
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"
-                      fill="white"
-                    />
-                  </svg>
+                <a class="home-button home-item-link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
                 </a>
               </li>
               <li class="home-item">
@@ -116,38 +101,43 @@
             action="https://echo.htmlacademy.ru/"
             method="get"
           >
+
             <fieldset class="filter-infra">
               <legend class="infrastructure-title">Инфраструктура:</legend>
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
-                  <input
-                    class="swim-box"
-                    type="checkbox"
-                    id="swim"
-                    name="bass"
-                    checked
-                  />
-                  <label class="checkbox-label" for="swim">Бассейн</label>
+                  <label class="checkbox-label" for="swim">
+                    <input
+                      class="swim-box"
+                      type="checkbox"
+                      id="swim"
+                      name="bass"
+                      checked
+                    />
+                    Бассейн</label
+                  >
                 </li>
                 <li class="infrastructure-item">
-                  <input
-                    class="park-box"
-                    type="checkbox"
-                    id="park"
-                    name="parking"
-                    checked
-                  />
-                  <label class="checkbox-label" for="park">Парковка</label>
+                  <label class="checkbox-label" for="park">
+                    <input
+                      class="park-box"
+                      type="checkbox"
+                      id="park"
+                      name="parking"
+                      checked
+                    />
+                    Парковка</label
+                  >
                 </li>
                 <li class="infrastructure-item">
-                  <input
-                    class="wifi-box"
-                    type="checkbox"
-                    id="wife"
-                    name="wi-fi"
-                  />
-                  <label class="checkbox-label" for="wifi" id="wifi"
-                    >Wi-Fi</label
+                  <label class="checkbox-label" for="wifi" id="wifi">
+                    <input
+                      class="wifi-box"
+                      type="checkbox"
+                      id="wife"
+                      name="wi-fi"
+                    />
+                    Wi-Fi</label
                   >
                 </li>
               </ul>
@@ -156,35 +146,37 @@
               <legend class="infrastructure-title">Тип жилья:</legend>
               <ul class="house-list">
                 <li class="house-items">
-                  <input
-                    class="house-box"
-                    type="radio"
-                    id="house-hotel"
-                    name="hotel"
-                    checked
-                  />
-                  <label class="checkbox-label" for="house-hotel"
-                    >Гостиница</label
+                  <label class="checkbox-label" for="house-hotel">
+                    <input
+                      class="house-box"
+                      type="radio"
+                      id="house-hotel"
+                      name="hotel"
+                      checked
+                    />
+                    Гостиница</label
                   >
                 </li>
                 <li class="house-items">
-                  <input
-                    class="motel-box"
-                    type="radio"
-                    id="motel-hotel"
-                    name="motel"
-                  />
-                  <label class="checkbox-label" for="motel-hotel">Мотель</label>
+                  <label class="checkbox-label" for="motel-hotel">
+                    <input
+                      class="motel-box"
+                      type="radio"
+                      id="motel-hotel"
+                      name="motel"
+                    />
+                    Мотель</label
+                  >
                 </li>
                 <li class="house-items">
-                  <input
-                    class="appart-box"
-                    type="radio"
-                    id="appart-hotel"
-                    name="Appart"
-                  />
-                  <label class="checkbox-label" for="appart-hotel"
-                    >Апартаменты</label
+                  <label class="checkbox-label" for="appart-hotel">
+                    <input
+                      class="appart-box"
+                      type="radio"
+                      id="appart-hotel"
+                      name="Appart"
+                    />
+                    Апартаменты</label
                   >
                 </li>
               </ul>
@@ -192,32 +184,34 @@
 
             <fieldset class="filter-items-group">
               <legend class="infrastructure-title">Стоимость, ₽:</legend>
-              <input
-                class="price-min-value"
-                type="text"
-                id="min-price"
-                name="min-price"
-                value="0"
-              />
-              <label class="price-label" for="min-price"></label>
-              <input
-                class="price-max-value"
-                type="text"
-                id="max-price"
-                name="max-price"
-                value="9000"
-              />
-              <label class="price-label" for="max-price">до</label>
+              <div class="price-container">
+                <label class="price-label label-min" for="min-price">от</label>
+                <input
+                  class="price-value min-value"
+                  type="text"
+                  id="min-price"
+                  name="min-price"
+                  value="0"
+                />
+                <label class="price-label label-max" for="max-price">до</label>
+                <input
+                  class="price-value max-value"
+                  type="text"
+                  id="max-price"
+                  name="max-price"
+                  value="9000"
+                />
+              </div>
 
               <div class="range-container">
                 <div class="range-scale">
                   <div class="range">
-                    <button class="range-handle-min" type="button">
+                    <button class="range-handle rangle-handle-min" type="button">
                       <span class="visually-hidden"
                         >Установить минимальный порог цены</span
                       >
                     </button>
-                    <button class="range-handle-max" type="button">
+                    <button class="range-handle rangle-handle-max" type="button">
                       <span class="visually-hidden"
                         >Установить максимальный порог цены</span
                       >
@@ -226,11 +220,14 @@
                 </div>
               </div>
             </fieldset>
-
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <fieldset class="catalog-filter-button">
+              <button class="button-sbt" type="submit">Применить</button>
+              <button class="button-rst" type="reset">Сбросить</button>
+            </fieldset>
           </form>
         </section>
+        </section>
+
         <section class="search">
           <h2 class="visually-hidden">Галерея отелей</h2>
           <section class="search-results">
@@ -361,7 +358,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link">1</a>
+              <a class="pagination-link pagination-first">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -373,7 +370,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link dot" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>

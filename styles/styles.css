@@ -25,10 +25,13 @@ body {
 }
 
 .page-container {
-  width: 1200px;
   margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .page-header {
@@ -698,48 +701,262 @@ body {
 
 .sedona-hotels {
   color: #ffffff;
+  background-color: #82b3d3;
   background-image: url("../images/jpeg/subs-blure.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 50px;
   margin: 0 auto;
-  width: 1060px;
-  padding-top: 35px;
-  padding-bottom: 70px;
+  padding: 35px 70px 69px;
 }
 
 .button-nav {
 }
 
 .nav-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .home-item {
-  margin-right: 29px;
+  position: relative;
+  padding-right: 15px;
+  margin-right: 11px;
 }
 
 .home-button {
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home-item-link {
+  background-image: url(../images/svg-button/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-left: -3px;
+  margin-top: 2px;
 }
 
 .infrastructure-group {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  gap: 70px;
+}
+
+.infrastructure-objects {
 }
 
 .filter-infra {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .infrastructure-title {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-transform: capitalize;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 32px;
+}
+.price-container {
+  position: relative;
+  width: 288px;
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+.price-label {
+  position: absolute;
+  top: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.label-min {
+  left: 105px;
+}
+
+.label-max {
+  right: 22px;
+}
+
+.price-value {
+  margin: 0;
+  padding: 12px 20px;
+  background-color: #f2f2f2;
+  font-family: PT Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 143px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.min-value {
+  border-radius: 4px 0 0 4px;
+}
+
+.max-value {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-container {
+  position: relative;
+  width: 287px;
+  height: 20px;
+}
+
+.range-scale {
+  width: 100%;
+  height: 1px;
+  border-top: 4px solid rgb(255, 255, 255, 0.3);
+  position: absolute;
+  left: 0;
+  top: 5px;
+  z-index: 1;
+}
+
+.range {
+  width: 226px;
+  height: 1px;
+  border-top: 4px solid #ffffff;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  z-index: 5;
+}
+
+.range-handle {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: -12px;
+  z-index: 10;
+}
+
+.rangle-handle-min {
+  left: 0;
+}
+
+.rangle-handle-max {
+  left: 206px;
+}
+
+.catalog-filter-button {
+  margin: 0;
+  padding: 0;
+  padding-top: 57px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.button-sbt,
+.button-rst {
+  color: #ffffff;
+  background-color: #82b3d3;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 191px;
+}
+
+.button-sbt:hover {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.button-sbt:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.button-sbt:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.button-sbt:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.button-rst {
+  background-color: transparent;
+  margin-top: 32px;
+}
+
+.button-rst:hover {
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.button-rst:focus {
+  color: rgba(255, 255, 255, 1);
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.button-rst:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.button-rst:disabled {
+  color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .infrastructure-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 140px;
 }
 
 .infrastructure-item {
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.infrastructure-item:not(:last-child) {
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 16px;
 }
 
 .swim-box {
@@ -749,6 +966,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .park-box {
@@ -758,9 +976,19 @@ body {
 }
 
 .filter-house {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .house-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 140px;
 }
 
 .house-items {
@@ -776,6 +1004,10 @@ body {
 }
 
 .filter-items-group {
+  margin: 0;
+  margin-left: 77px;
+  padding: 0;
+  border: none;
 }
 
 .items-title {
@@ -839,6 +1071,9 @@ body {
   margin-bottom: 24px;
   justify-content: space-between;
   padding-top: 7px;
+}
+
+.search-container {
 }
 
 .select-title {
@@ -1051,17 +1286,16 @@ body {
 }
 
 .pagination {
+  background-color: #ffffff;
   margin: 0;
-  padding: 0;
+  padding: 38px 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  text-align: center;
 }
-
-.pagination-item {
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
-
 .pagination-link {
   display: flex;
   height: 60px;
@@ -1072,6 +1306,31 @@ body {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+}
+
+.pagination-first {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.pagination-link:hover {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.pagination-link:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.pagination-link:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.dot {
+  background-color: transparent;
+  color: #000000;
 }
 
 .subscription-catalog {
