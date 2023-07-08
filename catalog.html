@@ -266,7 +266,7 @@
                 <a class="about-btn" href="#">Подробнее</a>
                 <button class="btn-favorite">В избранное</button>
               </div>
-              <div class="stars-four">
+              <div class="stars stars-four">
                 <span class="visually-hidden"
                   >Звездность отеля - четыре звезды</span
                 >
@@ -292,7 +292,7 @@
                 <a class="about-btn" href="#">Подробнее</a>
                 <button class="btn-elected">В избранном</button>
               </div>
-              <div class="stars-four">
+              <div class="stars stars-four">
                 <span class="visually-hidden"
                   >Звездность отеля - четыре звезды</span
                 >
@@ -318,7 +318,7 @@
                 <a class="about-btn" href="#">Подробнее</a>
                 <button class="btn-favorite">В избранное</button>
               </div>
-              <div class="stars-four">
+              <div class="stars stars-four">
                 <span class="visually-hidden"
                   >Звездность отеля - три звезды</span
                 >
@@ -344,7 +344,7 @@
                 <a class="about-btn" href="#">Подробнее</a>
                 <button class="btn-favorite">В избранное</button>
               </div>
-              <div class="stars-four">
+              <div class="stars stars-four">
                 <span class="visually-hidden"
                   >Звездность отеля - две звезды</span
                 >
@@ -376,24 +376,21 @@
       </main>
       <footer class="footer-page">
         <section class="subscription-catalog">
-          <div class="subscribe-wrapper">
+
             <h2 class="subscription-head">Подпишитесь на рассылку</h2>
             <p class="subscription-para">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
-          </div>
+
           <form
             class="subscription-form"
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
+          <label class="visually-hidden" for="email-field"></label>
             <input
               class="field"
-              placeholder="Ваш e-mail"
-              type="email"
-              name="newsletter-email"
-              required
-            />
+              type="email" name="email" id="email-field" placeholder="Ваш e-mail" required>
             <button class="subscription-button" type="submit">
               Подписаться
             </button>
@@ -461,6 +458,7 @@
           <a class="academy-link" href="#">
             <span class="visually-hidden">Логотип HTML-Academy</span>
             <svg
+            class="academy-svg"
               width="115"
               height="34"
               viewBox="0 0 115 34"

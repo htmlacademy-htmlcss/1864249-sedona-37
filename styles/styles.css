@@ -386,7 +386,10 @@ body {
 }
 
 .footer-page {
-  color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .subscription {
@@ -420,6 +423,9 @@ body {
 }
 
 .subscription-form {
+  display: flex;
+  margin: 0 auto;
+  width: 684px;
 }
 
 .field {
@@ -432,8 +438,8 @@ body {
   border: 3px solid transparent;
   box-sizing: border-box;
   text-align: start;
-  padding: 11px 17px;
-  width: 453px;
+  padding: 0 17px;
+  width: 452px;
 }
 
 .field:hover {
@@ -451,19 +457,20 @@ body {
 }
 
 .subscription-button {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  width: 232px;
-  text-transform: uppercase;
-  background-color: #82b3d3;
   color: #ffffff;
-  padding: 8px 10px;
+  background-color: #82b3d3;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   border-radius: 0 4px 4px 0;
-  position: absolute;
   border: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 232px;
 }
 
 .subscription-button:hover {
@@ -546,7 +553,28 @@ body {
 
 .academy-link {
   color: #000000;
-  padding-right: 70.1px;
+  padding-right: 70px;
+}
+
+.academy-link:focus {
+  outline: none;
+}
+
+.academy-svg {
+  fill: black;
+}
+
+.academy-link:hover .academy-svg {
+  fill: rgba(117, 97, 87, 1);
+}
+
+.academy-link:focus .academy-svg {
+  fill: rgba(117, 97, 87, 1);
+  outline: none;
+}
+
+.academy-link:active .academy-svg {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*Модальное окно*/
@@ -1408,11 +1436,15 @@ body {
 
 .price-value {
   font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  margin: 0;
-  padding: 0;
-  height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 12px 20px;
+  width: 143px;
+  height: 48px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
 }
 
 .cards-sellect {
@@ -1454,20 +1486,38 @@ body {
 }
 
 .stars {
+  background: url(../images/svg/star.svg) space 0 0;
+  height: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+.stars-one {
+  width: 18px;
+}
+
+.stars-two {
+  width: 40px;
+}
+
+.stars-three {
+  width: 65px;
 }
 
 .stars-four {
-  background-image: url(../images/svg/stars-four.svg);
+  width: 88px;
+}
+
+.stars-five {
+  width: 92px;
 }
 
 .hotel-rating {
   font-size: 16px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: 400;
+
   line-height: 20px;
   text-transform: uppercase;
-  color: #333333;
+
   background-color: #f2f2f2;
   border-radius: 4px;
 
@@ -1476,12 +1526,13 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 8px 22px;
+  margin-left: 156px;
 }
 
 .pagination {
   background-color: #ffffff;
   margin: 0;
-  padding: 38px 0;
+  padding: 40px 0;
   list-style: none;
   display: flex;
   text-align: center;
@@ -1490,15 +1541,33 @@ body {
   margin-right: 8px;
 }
 .pagination-link {
-  display: flex;
-  height: 60px;
-  min-width: 60px;
   background-color: #82b3d3;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  min-width: 60px;
+  height: 60px;
+  display: block;
   box-sizing: border-box;
-  padding: 11.364px 0 12.636px 0;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  padding: 13px 10px;
+}
+
+.pagination-link:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.pagination-link:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.pagination-link:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-first {
@@ -1526,13 +1595,15 @@ body {
   color: #000000;
 }
 
+.pagination-first {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
 .subscription-catalog {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
   margin: 0;
+  padding: 96px 258px 104px;
+  text-align: center;
 }
 .subscribe-wrapper {
   max-width: 475px;
@@ -1540,19 +1611,20 @@ body {
   text-align: center;
 }
 .subscription-head {
-  width: 404px;
-  height: 36.35px;
-  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
-
-  color: #000000;
+  text-transform: uppercase;
 }
 
 .subscription-para {
-  font-weight: 400;
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0 70px;
   font-size: 22px;
+  font-weight: 400;
   line-height: 26px;
-  text-align: center;
-  color: #333333;
 }
