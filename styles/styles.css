@@ -496,26 +496,30 @@ body {
 }
 
 .footer-contact {
+  margin: 0 auto;
+  padding: 44px 70px 35px;
   display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
   justify-content: space-between;
-  padding-top: 45px;
-  padding-bottom: 35px;
-  margin: 0;
 }
 
 .link-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: flex;
-  margin-right: 235.5px;
+  display: grid;
+  grid-template-columns: repeat(3, 47px);
 }
 
 .link-item {
-  margin-right: 27px;
+  margin: 0 auto;
 }
 
 .social-link {
   cursor: pointer;
   display: block;
+  padding: 12px;
 }
 
 .social-link:focus {
@@ -538,22 +542,29 @@ body {
 .social-link:active .social-svg {
   fill: rgba(104, 162, 202, 0.3);
 }
-
+.contact-container {
+  margin: 0;
+  padding: 0;
+}
 .contact-number {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
+  color: #000000;
   font-size: 40px;
   line-height: 40px;
+  font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
-  text-decoration-line: none;
-  margin-right: 260px;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 336px;
+  display: block;
+  cursor: pointer;
+  padding: 1px 0 0 3px;
 }
 
 .academy-link {
-  color: #000000;
-  padding-right: 70px;
+  margin: 0;
+  padding-top: 4px;
+  cursor: pointer;
+  display: block;
 }
 
 .academy-link:focus {
