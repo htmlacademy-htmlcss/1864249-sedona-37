@@ -68,11 +68,12 @@ body {
 }
 
 .menu-list {
-  padding: 0;
   margin: 0;
+  padding: 20px 0;
   list-style: none;
+  width: 464px;
   display: flex;
-  width: 400px;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -80,15 +81,38 @@ body {
 }
 
 .menu-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
   color: #000000;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
   padding: 20px 16px;
-  display: block;
+  cursor: pointer;
+  position: relative;
 }
 
+.menu-link--current::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 2px;
+  border-top: 2px solid rgba(117, 98, 87, 1);
+  bottom: -2px;
+  left: 16px;
+}
+
+.menu-link:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.menu-link-:focus {
+  color: rgba(117, 97, 87, 1);
+  outline: none;
+}
+
+.menu-link-:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 .user-menu {
   padding: 14px 0 0;
   margin: 0;
@@ -659,6 +683,24 @@ body {
   text-transform: capitalize;
   margin: 0;
 }
+
+.info-button {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: none;
+  padding: 0;
+
+  border-radius: 50%;
+  left: 458px;
+  background-color: #83b3d3;
+  background-image: url("../images/svg/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+
 .wrapper-form {
   display: flex;
   justify-content: space-between;
