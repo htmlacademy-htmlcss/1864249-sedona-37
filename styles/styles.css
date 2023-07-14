@@ -54,7 +54,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .logo-link {
@@ -202,7 +202,7 @@ body {
   background-image: url("../images/svg/triangle.svg"),
     url("../images/jpeg/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: left bottom, center top;
+  background-position: left bottom -1px, center top;
   background-size: 100% 57px, cover;
   text-align: center;
   padding-top: 51px;
@@ -642,7 +642,7 @@ body {
 .social-link {
   cursor: pointer;
   display: block;
-  padding: 12px;
+  padding: 9px;
 }
 
 .social-link:focus {
@@ -794,7 +794,13 @@ body {
   margin: 0;
 }
 
+.children {
+  padding-top: 11px;
+  display: inline-block;
+}
+
 .form-label-icon {
+  padding-right: 71px;
   position: relative;
 }
 
@@ -827,6 +833,14 @@ body {
   display: block;
 }
 
+.tooltip-text-wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -116px;
+  padding-top: 15px;
+}
+
 .tooltip-text {
   background-color: rgba(51, 51, 51, 1);
   color: #ffffff;
@@ -837,12 +851,9 @@ body {
   line-height: 20px;
   text-transform: none;
   width: 216px;
+  position: relative;
   padding: 21px 19px 22px 22px;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -116px;
-  margin-top: 15px;
+  display: block;
 }
 
 .tooltip-text::after {
@@ -858,8 +869,8 @@ body {
   margin-right: auto;
 }
 
-.info-button:hover + .tooltip-text,
-.info-button:focus + .tooltip-text {
+.tooltip:hover .tooltip-text-wrapper,
+.info-button:focus + .tooltip-text-wrapper {
   display: block;
 }
 
@@ -1039,7 +1050,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
-  padding: 35px 70px 69px;
+  padding: 35px 70px 67px;
 }
 
 .button-nav {
@@ -1064,8 +1075,8 @@ body {
   width: 7px;
   height: 10px;
   right: 0;
-  top: 6px;
-  background: url(../images/svg-button/arrow.svg);
+  top: 9px;
+  background: url("../images/svg-button/arrow.svg");
 }
 
 .home-item:last-child::before {
@@ -1082,15 +1093,12 @@ body {
 }
 
 .home-item-link {
-  background-image: url(../images/svg-button/home.svg);
-  display: block;
-  width: 14px;
-  height: 22px;
+  background-image: url("../images/svg-button/home.svg");
   display: block;
   width: 14px;
   height: 20px;
   background-repeat: no-repeat;
-  background-position: 0 4px;
+  background-position: 0 7px;
 }
 
 .home-item-link:hover {
@@ -1308,8 +1316,7 @@ body {
 
 .button-rst:focus {
   color: rgba(255, 255, 255, 1);
-  border: 3px solid #83b3d3;
-  outline: none;
+  outline: 3px solid #83b3d3;
 }
 
 .button-rst:active {
