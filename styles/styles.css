@@ -683,6 +683,19 @@ body {
   padding: 1px 0 0 3px;
 }
 
+.contact-number:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.contact-number:focus {
+  color: rgba(117, 97, 87, 1);
+  outline: none;
+}
+
+.contact-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .academy-link {
   margin: 0;
   padding-top: 4px;
