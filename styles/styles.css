@@ -356,7 +356,7 @@ body {
 }
 
 .service-container {
-  padding: 65px 0 63px;
+  padding: 65px 0 59px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 500px;
@@ -443,7 +443,7 @@ body {
 
 .hotel-search {
   margin: -2px auto;
-  padding: 96px 0 97px;
+  padding: 100px 0 97px;
   text-align: center;
 }
 
