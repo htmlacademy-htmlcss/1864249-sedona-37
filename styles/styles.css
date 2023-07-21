@@ -818,7 +818,7 @@ body {
 }
 
 .modal-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
@@ -958,7 +958,7 @@ body {
 }
 
 .error-message {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #ff5757;
@@ -969,7 +969,7 @@ body {
 }
 
 .message {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
