@@ -192,6 +192,7 @@ body {
   align-items: center;
   min-width: 20px;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .main {
@@ -780,6 +781,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  max-width: 550px;
 }
 
 .modal-form {
@@ -1383,6 +1385,7 @@ body {
   background-image: url(../images/svg/tick.svg);
   background-repeat: no-repeat;
   background-position: center;
+  flex-shrink: 0;
 }
 .swim-box[type="radio"] {
   background-color: #ffffff;
@@ -1392,12 +1395,14 @@ body {
   height: 20px;
   margin: 0;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .swim-box[type="radio"]:checked {
   background-image: url(../images/svg/dot-tick.svg);
   background-repeat: no-repeat;
   background-position: center;
+  flex-shrink: 0;
 }
 
 .swim-box:hover {
@@ -1560,6 +1565,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 17px center;
   appearance: none;
+  background-color: #fff;
 }
 
 .select-control:hover {
